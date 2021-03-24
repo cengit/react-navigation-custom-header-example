@@ -18,4 +18,9 @@ navigationOptions:{
   header:<View><Text>screen custom header</Text></View>
 }
 ```
+## 页面不需要header
+navigationOptions:{
+  headerMode:'none' // 页面不需要 header 
+}
+
 ## 注：例子只包含 navigator 的设置，RN项目代码，screen页面需要自己定义

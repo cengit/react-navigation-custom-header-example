@@ -11,7 +11,12 @@ import TestScreen from './screens/TestScreen';
 const RootNavigator = createStackNavigator(
   {
     Home: {screen: HomeScreen},
-    Login: {screen: LoginScreen},
+    Login: {
+      screen: LoginScreen,
+      navigationOptions:{
+        headerMode:'none' // 页面不需要 header 
+      }
+    },
     Test: {
       screen: TestScreen,
       // 页面级别的自定义header, 放在navigationOptions, 会覆盖全局的header
